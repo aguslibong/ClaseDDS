@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* Estilo del contenedor principal */
+.container.mt-5 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Encabezado */
+  .p-3.mb-2.bg-primary.text-white.rounded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #007bff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tabla */
+  .table.table-bordered {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table thead th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .table tbody td {
+    text-align: center;
+    padding: 0.75rem;
+    vertical-align: middle;
+  }
+  
+  .table tbody button {
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .table tbody .btn-secondary:hover,
+  .table tbody .btn-danger:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  .table tbody .btn-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Botón Volver */
+  .btn.btn-secondary.mt-3 {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem auto;
+    padding: 0.75rem;
+    background-color: #6c757d;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn.btn-secondary.mt-3:hover {
+    background-color: #5a6268;
+    color: #fff;
+  }
+  
+.position-absolute {
+    position: absolute !important;
+}
+.bottom-0 {
+    bottom: 0 !important;
+}
+.start-0 {
+    left: 0 !important;
+}

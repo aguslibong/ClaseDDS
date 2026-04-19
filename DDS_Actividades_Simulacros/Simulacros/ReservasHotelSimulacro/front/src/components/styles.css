@@ -1,0 +1,58 @@
+.container_app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+
+.error{
+    color: red;
+}
+
+/* styles.css */
+
+/* Estilos para el contenedor del menú */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Para centrar verticalmente */
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para el título */
+  .menu-container h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los enlaces */
+  .menu-container a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-container a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para una mejor accesibilidad */
+  .menu-container a:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+  }
+  
