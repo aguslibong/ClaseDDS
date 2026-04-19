@@ -1,0 +1,15 @@
+
+p {
+    color: blue;
+}
+
+/* 2. Pintar solo el elemento con clase destacado */
+.destacado {
+    font-weight: bold;
+    color: red;
+}
+
+/* 3. Pintar solo el elemento con id titulo */
+#titulo {
+    color: green;
+}
