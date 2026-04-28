@@ -10,13 +10,4 @@ for (let index = 0; index < 50; index++){
     arrayNum.push(myrng)
 }
 
-//recorré el array completo y mostrá por consola la suma total de todos los números. 
-let acum = 0
-for (let index = 0; index < arrayNum.length ; index++){
-    arrayNum[index]
-    acum = acum + arrayNum[index]
-}
-console.log(acum)
-
-// for (posicion inicail, condidion posision final, pasos)
 

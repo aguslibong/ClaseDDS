@@ -7,7 +7,3 @@ function obtenerUsuario() {
 }
 
 // hacer primer afuncion sin Async 
-
-
-
-// hacer funcion con Async

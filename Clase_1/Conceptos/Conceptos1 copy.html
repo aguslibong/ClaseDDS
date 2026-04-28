@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario Integrado - Desarrollo de Software</title>
+</head>
+<body>
+
+  <div>
+    <h1>Cuestionario Integrado - Desarrollo de Software</h1>
+    <p>
+      Preguntales primero el concepto. Después usá el botón para corroborar la respuesta.
+    </p>
+
+    <div>
+      <button onclick="mostrarTodas()">Mostrar todas</button>
+      <button onclick="ocultarTodas()">Ocultar todas</button>
+    </div>
+
+    <div>1. Fundamentos Web y Full Stack</div>
+
+    <div>
+      <div>¿Qué es Full Stack?</div>
+      <div>
+        Perfil que comprende varias capas de una aplicación: frontend, backend, base de datos y herramientas asociadas. No implica ser el mayor especialista en cada capa, sino entender cómo se integran.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un stack tecnológico?</div>
+      <div>
+        Es el conjunto de tecnologías que se usan para construir una aplicación. Por ejemplo: HTML, CSS, JavaScript, Node.js y una base de datos.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es el frontend?</div>
+      <div>
+        Es la capa visual con la que interactúa el usuario. Presenta la información y captura eventos como clics, escritura o navegación.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es el backend?</div>
+      <div>
+        Es la capa que implementa la lógica de negocio, valida reglas, procesa pedidos del cliente, accede a datos y devuelve respuestas.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es la base de datos?</div>
+      <div>
+        Es el sistema donde la aplicación persiste información de forma organizada, por ejemplo usuarios, productos, ventas o mensajes.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es el cliente?</div>
+      <div>
+        Es el entorno desde donde el usuario accede a la aplicación, normalmente un navegador web o una app.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es HTTP?</div>
+      <div>
+        Es el protocolo de comunicación que utilizan cliente y servidor para intercambiar información en la web.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un request?</div>
+      <div>
+        Es una solicitud que el cliente le envía al servidor para pedir o enviar información.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un response?</div>
+      <div>
+        Es la respuesta que el servidor devuelve al cliente después de procesar un request.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es JSON?</div>
+      <div>
+        Es un formato liviano de intercambio de datos basado en pares clave-valor. Se usa mucho entre frontend y backend.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>Diferencia entre sitio web y aplicación web</div>
+      <div>
+        Un sitio web suele enfocarse en mostrar información. Una aplicación web es más interactiva y permite que el usuario realice acciones y trabaje con contenido dinámico.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una web estática?</div>
+      <div>
+        Es una web que muestra esencialmente el mismo contenido para todos los usuarios y no depende de lógica dinámica del lado del servidor.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>2. HTML</div>
+
+    <div>
+      <div>¿Qué es HTML?</div>
+      <div>
+        Es un lenguaje de marcado que define la estructura y el significado del contenido de una página web.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿HTML es un lenguaje de programación?</div>
+      <div>
+        No. HTML no programa lógica; estructura contenido mediante etiquetas.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una etiqueta HTML?</div>
+      <div>
+        Es una marca que define un elemento del documento, por ejemplo <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code> o <code>&lt;form&gt;</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un atributo HTML?</div>
+      <div>
+        Es información adicional que se escribe en la etiqueta de apertura de un elemento, por ejemplo <code>id</code>, <code>class</code>, <code>src</code>, <code>href</code> o <code>type</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace &lt;!DOCTYPE html&gt;?</div>
+      <div>
+        Declara que el documento usa HTML5 y le indica al navegador cómo interpretar correctamente la página.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;html&gt;?</div>
+      <div>
+        Es el elemento raíz del documento HTML. Contiene todo el contenido de la página.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;head&gt;?</div>
+      <div>
+        Contiene configuración no visible para el usuario, como título, metadatos, enlaces a CSS y scripts.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;body&gt;?</div>
+      <div>
+        Contiene el contenido visible de la página: textos, imágenes, listas, formularios, botones, etc.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;meta&gt;?</div>
+      <div>
+        Es una etiqueta que define metadatos del documento, es decir, información sobre la página que no se muestra directamente al usuario.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace &lt;meta charset="UTF-8"&gt;?</div>
+      <div>
+        Define la codificación de caracteres del documento, permitiendo mostrar correctamente tildes, ñ y símbolos.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace &lt;meta name="viewport"&gt;?</div>
+      <div>
+        Ayuda a que la página se adapte correctamente al ancho del dispositivo, especialmente en celulares y tablets.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace &lt;title&gt;?</div>
+      <div>
+        Define el texto que aparece en la pestaña del navegador.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hacen &lt;h1&gt; a &lt;h6&gt;?</div>
+      <div>
+        Son encabezados jerárquicos. <code>h1</code> representa el nivel más importante y <code>h6</code> el menor.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;p&gt;?</div>
+      <div>
+        Representa un párrafo de texto.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace &lt;br&gt;?</div>
+      <div>
+        Inserta un salto de línea dentro del contenido.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace &lt;hr&gt;?</div>
+      <div>
+        Inserta una separación temática, generalmente mostrada como una línea horizontal.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;a&gt;?</div>
+      <div>
+        Es la etiqueta de enlace. Usa <code>href</code> para indicar el destino.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;img&gt;?</div>
+      <div>
+        Inserta una imagen. Usa <code>src</code> para la ruta y <code>alt</code> para texto alternativo.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;ul&gt;?</div>
+      <div>
+        Es una lista desordenada, normalmente mostrada con viñetas.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;ol&gt;?</div>
+      <div>
+        Es una lista ordenada, normalmente numerada.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;li&gt;?</div>
+      <div>
+        Es un ítem individual dentro de una lista.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;div&gt;?</div>
+      <div>
+        Es un contenedor genérico de bloque, muy usado para agrupar contenido y estructurarlo con CSS o JavaScript.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;span&gt;?</div>
+      <div>
+        Es un contenedor genérico en línea, útil para aplicar estilos o comportamiento a una parte pequeña del texto.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una etiqueta semántica?</div>
+      <div>
+        Es una etiqueta que expresa el significado del contenido que contiene, como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> o <code>&lt;footer&gt;</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;header&gt;?</div>
+      <div>
+        Representa el encabezado de una página o de una sección.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;nav&gt;?</div>
+      <div>
+        Representa una sección de navegación, como menús o enlaces principales.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;main&gt;?</div>
+      <div>
+        Representa el contenido principal del documento.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;section&gt;?</div>
+      <div>
+        Representa una sección temática del documento.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;article&gt;?</div>
+      <div>
+        Representa un contenido independiente y autocontenido, como una noticia, publicación o post.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;aside&gt;?</div>
+      <div>
+        Representa contenido secundario o complementario al contenido principal, como una barra lateral.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;footer&gt;?</div>
+      <div>
+        Representa el pie de página o pie de una sección.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un formulario?</div>
+      <div>
+        Es una sección que permite al usuario ingresar y enviar datos a un servidor.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;form&gt;?</div>
+      <div>
+        Es el contenedor principal de un formulario HTML. Agrupa campos y define cómo se enviarán los datos.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hacen action y method en un &lt;form&gt;?</div>
+      <div>
+        <code>action</code> indica a qué URL se enviarán los datos. <code>method</code> indica el método HTTP usado, normalmente GET o POST.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;input&gt;?</div>
+      <div>
+        Es un campo de entrada que permite capturar datos del usuario. Su comportamiento cambia según el atributo <code>type</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;label&gt;?</div>
+      <div>
+        Es una etiqueta descriptiva asociada a un campo de formulario. Mejora accesibilidad y usabilidad.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Para qué sirve el atributo for en &lt;label&gt;?</div>
+      <div>
+        Sirve para vincular la etiqueta <code>&lt;label&gt;</code> con un campo específico mediante su <code>id</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;textarea&gt;?</div>
+      <div>
+        Es un campo de formulario pensado para ingresar texto largo.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;select&gt;?</div>
+      <div>
+        Es una lista desplegable que permite elegir una opción entre varias.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;option&gt;?</div>
+      <div>
+        Es una opción individual dentro de un <code>&lt;select&gt;</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;button&gt;?</div>
+      <div>
+        Es un botón interactivo que puede enviar formularios o ejecutar acciones.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;table&gt;?</div>
+      <div>
+        Es la etiqueta que define una tabla HTML.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;tr&gt;?</div>
+      <div>
+        Representa una fila dentro de una tabla.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;td&gt;?</div>
+      <div>
+        Representa una celda de datos dentro de una fila.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es &lt;th&gt;?</div>
+      <div>
+        Representa una celda de encabezado dentro de una tabla.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>3. CSS</div>
+
+    <div>
+      <div>¿Qué es CSS?</div>
+      <div>
+        Es el lenguaje que define la presentación visual de un documento HTML: colores, tamaños, márgenes, posiciones y diseño.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Para qué sirve CSS?</div>
+      <div>
+        Sirve para separar la estructura del contenido de su presentación visual, haciendo el código más limpio, reutilizable y mantenible.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una regla CSS?</div>
+      <div>
+        Es una instrucción formada por un selector y un bloque de declaraciones que indica cómo se deben mostrar ciertos elementos HTML.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un selector CSS?</div>
+      <div>
+        Es la parte de la regla que indica a qué elemento o elementos se les aplicará el estilo.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una propiedad CSS?</div>
+      <div>
+        Es la característica visual que se quiere modificar, por ejemplo <code>color</code>, <code>margin</code> o <code>font-size</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un valor en CSS?</div>
+      <div>
+        Es el dato asignado a una propiedad, por ejemplo <code>blue</code>, <code>16px</code> o <code>center</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>Tipos de selectores CSS</div>
+      <div>
+        Los más comunes son: selector de elemento, de clase, de ID, de atributo, universal, pseudo-clase, pseudo-elemento, descendiente, hijos directos y hermanos.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un selector de clase?</div>
+      <div>
+        Selecciona todos los elementos que comparten el mismo valor en el atributo <code>class</code>. Se escribe con punto, por ejemplo <code>.destacado</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un selector de ID?</div>
+      <div>
+        Selecciona un elemento específico por su atributo <code>id</code>. Se escribe con numeral, por ejemplo <code>#encabezado</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un selector descendiente?</div>
+      <div>
+        Selecciona elementos que están dentro de otro elemento, aunque no sean hijos directos. Ejemplo: <code>div a</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Dónde se puede escribir CSS?</div>
+      <div>
+        Se puede escribir de tres formas: en un archivo externo <code>.css</code>, dentro de una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code>, o en línea con el atributo <code>style</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Cómo se vincula una hoja de estilos externa?</div>
+      <div>
+        Se usa la etiqueta <code>&lt;link&gt;</code> dentro de <code>&lt;head&gt;</code>, por ejemplo: <code>&lt;link href="styles/style.css" rel="stylesheet"&gt;</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es CSS en línea?</div>
+      <div>
+        Es escribir estilos directamente en el atributo <code>style</code> de una etiqueta HTML.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es CSS interno?</div>
+      <div>
+        Es escribir reglas CSS dentro de una etiqueta <code>&lt;style&gt;</code> en el documento HTML.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es CSS externo?</div>
+      <div>
+        Es escribir los estilos en un archivo separado con extensión <code>.css</code> y vincularlo al HTML.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es la especificidad en CSS?</div>
+      <div>
+        Es la regla que determina qué estilo gana cuando varias reglas compiten sobre el mismo elemento. Un selector más específico prevalece sobre uno menos específico.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué pasa si dos reglas tienen la misma especificidad?</div>
+      <div>
+        Gana la que aparece más tarde en la cascada.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué prioridad tiene el estilo en línea?</div>
+      <div>
+        Tiene mayor prioridad que las reglas internas o externas normales.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué son las variables CSS?</div>
+      <div>
+        Son propiedades personalizadas que permiten guardar valores reutilizables, como colores o tamaños, y referenciarlos luego con <code>var(...)</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace !important?</div>
+      <div>
+        Fuerza a que una regla tenga prioridad sobre otras, incluso si normalmente perdería por cascada o especificidad.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>4. JavaScript y Node.js</div>
+
+    <div>
+      <div>¿Qué es JavaScript?</div>
+      <div>
+        Es un lenguaje de programación usado para agregar lógica e interactividad a las aplicaciones web. Hoy también puede ejecutarse fuera del navegador.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿JavaScript y Java son lo mismo?</div>
+      <div>
+        No. Son lenguajes diferentes, con historia, diseño y modelo de ejecución distintos.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es ECMAScript?</div>
+      <div>
+        Es la especificación estandarizada de JavaScript, que define cómo debe comportarse el lenguaje.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es Node.js?</div>
+      <div>
+        Es un entorno de ejecución que permite correr JavaScript fuera del navegador, especialmente del lado del servidor.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un runtime?</div>
+      <div>
+        Es el entorno donde corre un lenguaje, incluyendo motor de ejecución, APIs y recursos del sistema.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es el motor V8?</div>
+      <div>
+        Es el motor de JavaScript de Google que usan Chrome y Node.js para ejecutar código JavaScript eficientemente.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué significa Single Thread?</div>
+      <div>
+        Significa que el hilo principal de ejecución procesa una instrucción a la vez. Node.js ejecuta JavaScript en un único hilo principal.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un thread?</div>
+      <div>
+        Es una unidad de ejecución dentro de un proceso.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un proceso?</div>
+      <div>
+        Es una instancia de un programa en ejecución, con memoria y recursos propios.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es el Event Loop?</div>
+      <div>
+        Es el mecanismo que revisa constantemente si hay tareas pendientes y, cuando el hilo principal queda libre, ejecuta la siguiente disponible.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es asincronía?</div>
+      <div>
+        Es la capacidad de iniciar operaciones lentas sin bloquear el hilo principal, permitiendo que el programa siga haciendo otras tareas.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>Bloqueante vs no bloqueante</div>
+      <div>
+        En una operación bloqueante, el programa espera hasta terminarla. En una no bloqueante, inicia la tarea y continúa trabajando hasta recibir el resultado.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un callback?</div>
+      <div>
+        Es una función que se pasa como parámetro para ejecutarse más adelante, cuando termina una tarea o sucede un evento.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una Promise?</div>
+      <div>
+        Es un objeto que representa el resultado futuro de una operación asíncrona. Puede estar pendiente, resuelta o rechazada.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es async / await?</div>
+      <div>
+        Es una sintaxis que permite trabajar con promesas de forma más legible, escribiendo asincronía con apariencia secuencial.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es el Call Stack?</div>
+      <div>
+        Es la estructura donde se apilan las funciones activas. Cuando una función termina, se desapila.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una API REST?</div>
+      <div>
+        Es una interfaz donde cliente y servidor se comunican mediante recursos y métodos HTTP como GET, POST, PUT y DELETE.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace GET?</div>
+      <div>
+        Solicita datos al servidor.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace POST?</div>
+      <div>
+        Envía datos al servidor para crear o registrar nueva información.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace PUT?</div>
+      <div>
+        Reemplaza o actualiza un recurso existente.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué hace DELETE?</div>
+      <div>
+        Elimina un recurso del servidor.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Cómo se vincula JavaScript al HTML?</div>
+      <div>
+        Se puede escribir dentro de una etiqueta <code>&lt;script&gt;</code> o vincular un archivo externo con <code>&lt;script src="archivo.js"&gt;&lt;/script&gt;</code>.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>5. Programación</div>
+
+    <div>
+      <div>¿Qué es un algoritmo?</div>
+      <div>
+        Es una secuencia ordenada y finita de pasos para resolver un problema.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una variable?</div>
+      <div>
+        Es un espacio de memoria con nombre donde se almacena un valor.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un tipo de dato?</div>
+      <div>
+        Es la categoría del valor que determina qué información contiene y qué operaciones se pueden hacer sobre él.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una condición?</div>
+      <div>
+        Es una expresión que se evalúa como verdadera o falsa y permite tomar decisiones en el programa.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un bucle?</div>
+      <div>
+        Es una estructura que repite instrucciones mientras se cumpla una condición o una cantidad determinada de veces.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es una función?</div>
+      <div>
+        Es un bloque de código reutilizable que realiza una tarea específica. Puede recibir datos y devolver un resultado.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un parámetro?</div>
+      <div>
+        Es la variable declarada en la definición de una función para representar los datos que espera recibir.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un argumento?</div>
+      <div>
+        Es el valor real que se le pasa a la función cuando se la invoca.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>Diferencia entre parámetro y argumento</div>
+      <div>
+        El parámetro aparece en la definición de la función. El argumento es el valor concreto enviado cuando la función se ejecuta.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué significa retornar?</div>
+      <div>
+        Significa devolver un valor como resultado de una función.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es el scope o alcance de una variable?</div>
+      <div>
+        Es la parte del programa donde esa variable existe y puede ser usada.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un array?</div>
+      <div>
+        Es una estructura que guarda varios valores en una misma colección, ordenados por posición o índice.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es un objeto?</div>
+      <div>
+        Es una estructura que agrupa información relacionada, normalmente en pares clave-valor, y según el paradigma también comportamientos.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es modularidad?</div>
+      <div>
+        Es la división del programa en partes independientes y organizadas, cada una con una responsabilidad clara.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es reutilización de código?</div>
+      <div>
+        Es la posibilidad de usar una misma solución o bloque de código en varios lugares sin duplicarlo.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es programación funcional?</div>
+      <div>
+        Es un paradigma que organiza la solución alrededor de funciones y transformación de datos, buscando minimizar cambios de estado innecesarios.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué es programación orientada a objetos?</div>
+      <div>
+        Es un paradigma que modela el sistema con objetos que combinan estado y comportamiento.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>Diferencia entre funcional y objetos</div>
+      <div>
+        La programación funcional pone el foco en funciones y transformación de datos. La orientada a objetos pone el foco en entidades con atributos y comportamientos que colaboran entre sí.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+    <div>
+      <div>¿Qué paradigma usa JavaScript?</div>
+      <div>
+        JavaScript es multiparadigma. Puede programarse de forma funcional, orientada a objetos y también imperativa.
+      </div>
+      <button onclick="toggle(this)">Ver respuesta</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
