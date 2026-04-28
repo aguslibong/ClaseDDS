@@ -12,11 +12,23 @@ for (let index = 0; index < 50; index++){
 
 //recorré el array completo y mostrá por consola la suma total de todos los números. 
 let acum = 0
+let mayor = 0
+let menor = 0
 for (let index = 0; index < arrayNum.length ; index++){
     arrayNum[index]
     acum = acum + arrayNum[index]
+    if (arrayNum[index] > mayor){
+        mayor = arrayNum[index]
 }
+    if (arrayNum[index] < menor){
+        menor = arrayNum[index]
+    
+    }
+}    
 console.log(acum)
+console.log(mayor)
+console.log(menor)
+
 
 // for (posicion inicail, condidion posision final, pasos)
 

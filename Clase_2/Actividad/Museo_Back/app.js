@@ -4,9 +4,14 @@ import sequelize from "./config/data/db.js";
 import MUSEO from "./app/model/modelMUSEO.js"
 import museoController from "./app/controller/controllerMUSEO.js";
 
+import swaggerUi from "swagger-ui-express";
+import swaggerSpec from "./swagger.js";
+
+
 const app = Express();
 app.use(Express.json());
 app.use(Cors()); 
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use(museoController); // aca museoControler esta exportando sus rutas
 
