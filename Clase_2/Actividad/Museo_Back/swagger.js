@@ -9,11 +9,11 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:3021/"
+        url: "http://localhost:3000"
       }
     ]
   },
-  apis: ["./controller/controllerMUSEO.js"]
+  apis: ["./app/controller/*.js"]
 };
 
 const swaggerSpec = swaggerJSDoc(options);

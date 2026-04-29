@@ -33,7 +33,7 @@ async function inicializarBaseDeDatos() {
 };
 
 inicializarBaseDeDatos().then(() => {
-    app.listen(3021, () => console.log('Inicio backend'));
+    app.listen(3000, () => console.log('Inicio backend'));
 });
 
 
